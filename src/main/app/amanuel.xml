@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="amanuelFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/aman" doc:name="HTTP"/>
         <set-payload value="#[message.payload]" doc:name="Set Payload"/>
-        <logger level="INFO" doc:name="Logger"/>
+        <logger message="hello" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
